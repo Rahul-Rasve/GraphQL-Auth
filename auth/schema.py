@@ -3,7 +3,7 @@ import graphql_jwt
 import api.schema
 
 class Mutation(api.schema.Mutation, graphene.ObjectType):
-    token_auth = graphql_jwt.ObtainJSONWebToken.Field()
+    login = graphql_jwt.ObtainJSONWebToken.Field() #login user
     refresh_token = graphql_jwt.Refresh.Field()
     verify_token = graphql_jwt.Verify.Field()    
     pass
