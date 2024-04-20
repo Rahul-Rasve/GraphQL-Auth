@@ -3,7 +3,6 @@ from graphene_django import DjangoObjectType
 from api.models import profile
 from graphql_jwt.shortcuts import create_refresh_token, get_token
 import graphene
-import graphql_jwt
 
 # Make models available to graphene.Field
 class UserType(DjangoObjectType):
